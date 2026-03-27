@@ -1,0 +1,33 @@
+By: Rein Alderfer
+Date: 3-27-2026
+
+I setup one proxmox computer and got it online today. Here was the configuration:
+PC Name: CS-PRO-2
+Config:
+Hostname: CS-PROJ-2.etown.edu
+IP Address: 129.168.1.120/24
+Gateway: 192.168.1.1
+DNS Server: 10.0.96.52
+
+Cluster Setup:
+Cluster Name: NLC
+Only used one link, as I don't have multiple network ports or I would have used a seperate nic for clustering.
+
+PC Name: CS-PROJ-3
+Config:
+Hostname: CS-PROJ-3.etown.edu
+IP Address: 192.168.1.121
+Gateway: 192.168.1.1
+DNS Server: 10.0.96.52a
+This PC was able to join the cluster.
+
+PC Name: CS-PROJ-4
+Config:
+Hostname: CS-PROJ-4.etown.edu
+IP Address: 192.168.122
+Gateway: 19.168.1.1
+DNS Server: 10.0.96.52
+I had an error when trying to connect this one to the cluster I will come back to it later and try and debug the problem.
+
+Hardware upgrades:
+I was able to acquire 4 sticks of 8GB DDR4 SODIMM RAM. From the ITS help Desk, two of the sticks only run at 2666 mhz and the other two run at 3200mhz. I installed all 4 of them into the Optiplex Micro PC's. I installed the two 3200mzh sticks into 
