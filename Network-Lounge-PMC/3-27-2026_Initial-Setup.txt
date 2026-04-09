@@ -29,5 +29,12 @@ Gateway: 19.168.1.1
 DNS Server: 10.0.96.52
 I had an error when trying to connect this one to the cluster I will come back to it later and try and debug the problem.
 
+PC Name: CS-PROJ-5
+Config:
+Hostname: CS-PROJ-5.etown.edu
+IP Address: 192.168.1.123
+Gateway: 192.168.1.1
+DNS Server: 10.0.96.52
+
 Hardware upgrades:
 I was able to acquire 4 sticks of 8GB DDR4 SODIMM RAM. From the ITS help Desk, two of the sticks only run at 2666 mhz and the other two run at 3200mhz. I installed all 4 of them into the Optiplex Micro PC's. I installed the two 3200mzh sticks into 
