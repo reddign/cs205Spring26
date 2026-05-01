@@ -14,7 +14,7 @@
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="project-a.html">Project A</a>
+    <a href="project-PMC.html">Project PMC</a>
     <a href="project-b.html">Project B</a>
     <a href="project-c.html">Project C</a>
     <a href="project-d.html">Project D</a>
@@ -25,23 +25,76 @@
     <h2>Project B – Make Frankenstein Live and have Value</h2>
 
     <p>
-        This project involves Dr Leap's previous 2019 Linux Server that did not turn 
+        This project involves Dr Leap's previous 2011 Linux Server that did not turn 
         on at all during initial testing. The computer now turns on and appears to be 
-        running an older Linux OS. How the computer will be purposed has not been decided yet.
+        running an older Linux OS. It has been decided that the server will be repurposed
+        to run a wireshark instance to monitor network traffic within the networking lab.
     </p>
 
     <h3>Objectives</h3>
     <ul>
         <li>Bring it back to life</li>
-        <li>Demonstrate some Linux server features</li>
-        <li>Provide Value to the Lab</li>
+        <li>Install friendlier operating system</li>
+        <li>Install wireshark</li>
+        <li>Connect server to primary switch or router and log traffic</li>
     </ul>
+
+    <h3>Process</h3>
+    <ol>
+        <li>
+            <dl>
+                <dt>Fixing outstanding issues with server</dt>
+                <dd>
+                    The CMOS battery on the motherboard had died, causing any changes made in the 
+                    BIOS such as boot order to not be saved, while this was not crucial, repair would
+                    would streamline later use.
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>Installing a friendlier OS</dt>
+                <dd>
+                    Due to the system being relatively outdated, external boots can only happen either 
+                    over a NIC or a CD disk using the reader. The simplist option was to burn a linux 
+                    distro onto a CD or DVD drive. This step proved to be more complicated than anticipated,
+                    as many versions either did not fit onto a CD or DVD, or did not support such old hardware.
+                    An older version of Ubuntu Lite was found to be compatible with the hardware and also fit
+                    onto a DVD.
+                </dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <dt>Installing Wireshark</dt>
+                <dd>
+                    After installing the OS and necessary packages, Wireshark could be installed using the 
+                    apt package manager. This was a relatively straight forward process. However, some
+                    permission changes were needed to allow user to run wireshark without root access each time.
+                </dd>
+            </dl>
+        </li>
+    </ol>
 
     <h3>Outcome</h3>
     <p>
-        Students demonstrate hardware trouble shooting & system management skills.
+        The server is now able to successfully boot into a linux OS and is able to run Wireshark. However, due
+        to the low hardware specifications, the functions of the server may be limited. It has yet to be connected
+        to a switch or router to log traffic, but doing so should be relatively easy to complete, with simple setup
+        required on the switch or router to mirror traffic to server.
     </p>
-    
+
+    <h3>Images</h3>
+    <figure style="display: inline-block">
+        <img src="assets/LUbuntu_Mem_Test.jpg" alt="Memory test, part of Ubuntu Lite iso" class="img-responsive" style="max-width: 300px;">
+        <figcaption>Memory test, part of Ubuntu Lite iso</figcaption>
+    </figure>
+
+    <figure style="display: inline-block">
+        <img src="assets/Server_Wireshark.jpg" alt="Wireshark running on server" class="img-responsive" style="max-width: 300px;">
+        <figcaption>Wireshark running on server</figcaption>
+    </figure>
+
     <h3>Team Members</h3>
     <p>
         Parker Engle & Owen Yang
